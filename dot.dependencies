@@ -8,6 +8,6 @@
   {
     "repository":  "kernel_motorola_msm8953",
     "target_path": "kernel/motorola/msm8953",
-    "branch": "eleven"
+    "branch": "dot11"
   }
 ]
