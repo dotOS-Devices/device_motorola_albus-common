@@ -11,9 +11,10 @@
     "branch": "dot11"
   },
   {
-    "repository": "android_packages_resources_devicesettings-custom",
-    "target_path": "packages/resources/devicesettings-custom",
-    "branch": "dot11"
+    "remote"      : "github",
+    "repository"  : "PixelExperience/packages_resources_devicesettings-custom",
+    "target_path" : "packages/resources/devicesettings-custom",
+    "branch"      : "eleven"
   },
   {
     "remote"      : "github",
