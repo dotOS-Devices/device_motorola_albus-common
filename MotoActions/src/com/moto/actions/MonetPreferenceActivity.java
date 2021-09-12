@@ -12,25 +12,20 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
+*/
 
 package com.moto.actions;
 
+import android.content.res.ColorStateList;
 import android.os.Bundle;
+import android.preference.PreferenceActivity;
 
-import com.moto.actions.MonetPreferenceActivity;
-
-public class GestureSettingsActivity extends MonetPreferenceActivity {
-
+public class MonetPreferenceActivity extends PreferenceActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        if (getActionBar() != null) {
-            getActionBar().setDisplayHomeAsUpEnabled(true);
-        }
-
-            getFragmentManager().beginTransaction()
-                    .replace(android.R.id.content, new GestureSettingsFragment()).commit();
-        }
+        int monetBackground = getColor(android.R.color.monet_background_device_default);
+        getWindow().getDecorView().setBackgroundColor(monetBackground);
+        getWindow().getDecorView().setBackgroundTintList(ColorStateList.valueOf(monetBackground));
     }
+}
